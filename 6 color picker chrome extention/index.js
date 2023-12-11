@@ -9,6 +9,7 @@ let currentPopup = null;
 
 const copyToClipboard = async (text, element) => {
   try {
+    console.log("printing navigator", navigator);
     await navigator.clipboard.writeText(text);
     element.innerText = "Copied!";
     setTimeout(() => {
@@ -118,6 +119,7 @@ const activateEyeDropper = async () => {
   document.body.style.display = "none";
   try {
     const { sRGBHex } = await new EyeDropper().open();
+    console.log("printing eye dropper", sRGBHex);
 
     if (!pickedColors.includes(sRGBHex)) {
       pickedColors.push(sRGBHex);
