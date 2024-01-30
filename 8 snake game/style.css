@@ -1,0 +1,62 @@
+#gameContainer{
+    text-align: center;
+}
+
+#scoreText{
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+}
+#resetBtn{
+    font-family: "Permanent Marker", cursive;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    
+}
+
+body{
+    background-color: rgb(69, 73, 82);
+    background-image: url("snakebackground.svg");
+    background-position-x:center;
+    background-repeat: no-repeat;
+}
+
+canvas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 8px;
+}
+
+#start-screen button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3px 40px;
+    border-radius: 4px;
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    background-color: green;
+    color: white;
+}
+
+#start-screen button:hover{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+#start-screen{
+    background-image: url("snakebackground.svg") ;
+}
